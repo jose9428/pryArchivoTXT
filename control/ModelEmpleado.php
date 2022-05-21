@@ -9,10 +9,6 @@ class ModelEmpleado {
         $this->NOMBRE_ARCHIVO = $ruta;
     }
 
-    function Mensaje() {
-        return "mensaje: " . $this->NOMBRE_ARCHIVO;
-    }
-
     function CargarArchivo() {
         $empleados = array();
         if (file_exists($this->NOMBRE_ARCHIVO)) {
